@@ -1,6 +1,5 @@
 setTimeout(() => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    console.log(42)
     anchor.addEventListener('click', function(e) {
       e.preventDefault()
 
@@ -9,4 +8,4 @@ setTimeout(() => {
       })
     })
   })
-}, 2000)
+}, 500)

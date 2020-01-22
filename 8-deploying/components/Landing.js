@@ -12,10 +12,10 @@ export default function Layout(props) {
         </p>
       </div>
       <p className="catch-sentance front">
-        «S'investir,
+        « S'investir.
         <br />
         Agir pour <b className="N-text">S</b>oi et pour les{' '}
-        <b className="N-text">A</b>utres.»
+        <b className="N-text">A</b>utres. »
       </p>
       <div className="front">
         <a href="#missions">

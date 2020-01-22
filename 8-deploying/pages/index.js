@@ -10,37 +10,27 @@ function getPosts() {
     { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
   ]
 }
-var str = `document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});`
-const PostLink = ({ post }) => (
-  <li>
-    <Link href="/p/[id]" as={`/p/${post.id}`}>
-      <a>{post.title}</a>
-    </Link>
-  </li>
-)
+// const PostLink = ({ post }) => (
+//   <li>
+//     <Link href="/p/[id]" as={`/p/${post.id}`}>
+//       <a>{post.title}</a>
+//     </Link>
+//   </li>
+// )
 
 export default function Nous() {
   return (
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      console.log(42)
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault()
-  
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        })
-      })
-    })
-      <Layout>
-        <Landing />
-      </Layout>
+    <Layout>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+          rel="stylesheet"
+        />
+        <title>NOUS</title>
+        <link href="/static/styles2.css" rel="stylesheet" />
+        <script type="text/javascript" src="/static/smooth.js"></script>
+      </Head>
+      <Landing />
+    </Layout>
   )
 }
