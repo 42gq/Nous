@@ -3,19 +3,19 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <div className="header-box">
-      <Link href="/">
+      <Link href="/#associations">
         <div className="header-item item-1 item-side">
-          <a className="header-text">Accueil</a>
+          <a className="header-text">Association ?</a>
         </div>
       </Link>
-      <Link href="/associations">
+      <Link href="/#missions">
         <div className="header-item item-2 item-mid">
-          <a className="header-text">Nos associations</a>
+          <a className="header-text">Salarié ?</a>
         </div>
       </Link>
-      <Link href="/entreprises">
+      <Link href="/#entreprises">
         <div className="header-item item-3 item-mid">
-          <a className="header-text">Nos entreprises</a>
+          <a className="header-text">Entreprise ?</a>
         </div>
       </Link>
       <Link href="/#inscription">

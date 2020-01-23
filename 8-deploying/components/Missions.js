@@ -1,4 +1,6 @@
 import Layout from './MyLayout.js'
+import SearchExampleStandard from '../real-compo/Search'
+import GridExampleDividedNumber from '../real-compo/Grid'
 
 export default function Missions() {
   return (
@@ -6,20 +8,11 @@ export default function Missions() {
       <div className="contain-cover">
         <div className="cover cover7"></div>
       </div>
-      {/* <div className="other-name">
-        <h1 className="classic-h1">
-          <b className="other-cap">R</b>echercher une mission
-        </h1>
-      </div> */}
-      <div className="searchBar">
-        <imput placeholder="Vous cherchez une association ?"></imput>
-        <button>Chercher</button>
+      <div className="replace">
+        <h2 className="pos20">Recherchez la mission qui vous convient !</h2>
+        <SearchExampleStandard className="reworkSearch" />
       </div>
-      {/* <ul className="annuary">
-        <li clasName="item-annuary">Mission n.1</li>
-        <li clasName="item-annuary">Mission n.2</li>
-        <li clasName="item-annuary">Mission n.3</li>
-      </ul> */}
+      <GridExampleDividedNumber />
     </div>
   )
 }

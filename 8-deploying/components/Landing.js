@@ -11,12 +11,20 @@ export default function Layout(props) {
           <font>&CIE</font>
         </p>
       </div>
-      <p className="catch-sentance front">
-        « S'investir.
-        <br />
-        Agir pour <b className="N-text">S</b>oi et pour les{' '}
-        <b className="N-text">A</b>utres. »
-      </p>
+      <div className="catch-sentance front">
+        <p>
+          <i>
+            « S'investir.
+            <br />
+            Agir pour <b className="N-text">S</b>oi et pour les{' '}
+            <b className="N-text">A</b>utres. »
+          </i>
+        </p>
+        {/* <p className="info">
+          De nombreuses causes valent la peine, impliquez vous socialement dans
+          les associations locales !
+        </p> */}
+      </div>
       <div className="front">
         <a href="#inscription">
           <button className="landing-button">

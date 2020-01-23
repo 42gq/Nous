@@ -4,6 +4,9 @@ export default function Associations() {
       <div className="contain-cover">
         <div className="cover cover4"></div>
       </div>
+      <div className="asso">
+        <i>Salut</i>
+      </div>
     </div>
   )
 }

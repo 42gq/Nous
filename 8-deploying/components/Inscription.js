@@ -20,19 +20,6 @@ export default function Inscription() {
               />
             </div>
             <div className="form-example">
-              <label htmlFor="email">E-mail :</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="input-field"
-                placeholder="hdt@nous.com"
-                required
-              />
-            </div>
-          </div>
-          <div className="col">
-            <div className="form-example">
               <label htmlFor="name">Nom :</label>
               <input
                 type="text"
@@ -40,6 +27,19 @@ export default function Inscription() {
                 id="name"
                 className="input-field"
                 placeholder="Dalton"
+                required
+              />
+            </div>
+          </div>
+          <div className="col">
+            <div className="form-example">
+              <label htmlFor="email">E-mail :</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className="input-field"
+                placeholder="hdt@nous.com"
                 required
               />
             </div>
@@ -65,17 +65,13 @@ export default function Inscription() {
               className="select-field"
               required
             >
+              <option>Je suis un étudiant en quête de sens !</option>
+              <option>Je suis une association en quête de bénévoles !</option>
               <option>
-                Je suis <b>un étudiant</b> en quête de sens !
+                Je suis un salarié/une salariée avec l'envie de servir !
               </option>
               <option>
-                Je suis <b>une association</b> en quête de bénévoles !
-              </option>
-              <option>
-                Je suis <b>un salarié/une salariée</b> avec l'envie de servir !
-              </option>
-              <option>
-                Je suis <b>une entreprise</b> préoccupée par son inpact !
+                Je suis une entreprise préoccupée par son inpact !
               </option>
             </select>
           </div>
