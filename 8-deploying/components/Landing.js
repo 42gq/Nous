@@ -18,7 +18,7 @@ export default function Layout(props) {
         <b className="N-text">A</b>utres. »
       </p>
       <div className="front">
-        <a href="#missions">
+        <a href="#inscription">
           <button className="landing-button">
             <span>
               REJOIGNEZ <b className="N-button">N</b>OUS
@@ -27,7 +27,7 @@ export default function Layout(props) {
         </a>
       </div>
       <div className="contain-cover">
-        <div className="cover"></div>
+        <div className="cover1 cover"></div>
         {/* <p className="landing-desc-2">
           Definir les besoins des associations et acteurs solidaires locaux.
           <br />

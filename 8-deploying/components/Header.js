@@ -18,7 +18,7 @@ export default function Header() {
           <a className="header-text">Nos entreprises</a>
         </div>
       </Link>
-      <Link href="/#missions">
+      <Link href="/#inscription">
         <div className="header-item item-4 item-side">
           <a className="header-text">
             REJOIGNEZ <b>N</b>OUS

@@ -34,7 +34,7 @@
 /* COVER */
 .contain-cover {
   z-index: 0;
-  background-color: black;
+  /* background-color: black; */
   position: absolute;
   top: 0;
   left: 0;

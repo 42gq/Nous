@@ -2,24 +2,24 @@ import Layout from './MyLayout.js'
 
 export default function Missions() {
   return (
-    <div className="missions" id="missions">
+    <div className="missions page" id="missions">
       <div className="contain-cover">
-        <div className="cover2"></div>
+        <div className="cover cover7"></div>
       </div>
-      <div className="other-name">
+      {/* <div className="other-name">
         <h1 className="classic-h1">
-          <b className="other-cap">M</b>issions
+          <b className="other-cap">R</b>echercher une mission
         </h1>
+      </div> */}
+      <div className="searchBar">
+        <imput placeholder="Vous cherchez une association ?"></imput>
+        <button>Chercher</button>
       </div>
-      <div className="researchPan">
-        <div></div>
-        <div></div>
-      </div>
-      <ul>
-        <li>Mission n.1</li>
-        <li>Mission n.2</li>
-        <li>Mission n.3</li>
-      </ul>
+      {/* <ul className="annuary">
+        <li clasName="item-annuary">Mission n.1</li>
+        <li clasName="item-annuary">Mission n.2</li>
+        <li clasName="item-annuary">Mission n.3</li>
+      </ul> */}
     </div>
   )
 }
