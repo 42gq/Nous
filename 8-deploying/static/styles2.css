@@ -40,6 +40,7 @@
   z-index: 1;
   position: absolute;
   top: 50%;
+  left: 5%;
 }
 .reworkRow .column {
   padding: 20px;
@@ -81,15 +82,27 @@
   background-color: #fbfbff;
 }
 .cover4 {
-  background-color: #c2b8b2;
+  border-top: 5px solid #2d352c;
+  background: url(../static/images/cover2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: bottom;
 }
+
 .cover5 {
+  border-top: 5px solid #2d352c;
   background-color: #fbfbff;
 }
 .cover6 {
-  background-color: #c2b8b2;
+  border-top: 5px solid #2d352c;
+  background: url(../static/images/cover5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .cover7 {
+  border-top: 5px solid #2d352c;
   background-color: #fbfbff;
 }
 .cover8 {
@@ -97,6 +110,9 @@
 }
 .front {
   z-index: 1;
+}
+.field label {
+  width: 30%;
 }
 h2 {
   position: relative;
@@ -107,6 +123,20 @@ h2 {
 }
 .pos20 {
   margin-top: 15%;
+}
+.pos21 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.resize-calend input {
+  font-size: 0.7em;
+}
+.nodisp .transition {
+  display: none;
+}
+.large-input {
+  width: 69%;
+  height: 60px;
 }
 .header-box {
   z-index: 3;
@@ -197,7 +227,14 @@ h2 {
   align-items: center;
   color: #2d352c;
 }
-
+form {
+  margin: 50px;
+}
+form .field .input {
+  margin-left: 50px;
+  font-size: 2em;
+  display: inline-flex;
+}
 /* BUTTON-LANDING */
 
 .landing-button {
@@ -232,7 +269,7 @@ h2 {
 .catch-sentance {
   position: absolute;
   top: 30vh;
-  width: 60%;
+  width: 50%;
   left: 25%;
   font-size: 3vw;
   line-height: 134%;
@@ -243,7 +280,9 @@ h2 {
   color: #2d352c;
 }
 .info {
-  font-size: 2vw;
+  font-size: 1.5vw;
+  line-height: 180%;
+  text-align: right;
 }
 .N-text {
   font-size: 4vw;
@@ -276,21 +315,25 @@ h2 {
   align-items: center;
   color: #2d352c;
 }
-.concept .pan {
-  position: relative;
+.concept-pan {
+  /* position: relative; */
   height: 100%;
+  position: inherit;
   width: 95%;
 }
 .pan {
+  position: relative;
   display: inline-flex;
-  padding: 10px;
-  margin: 4vh 1vw 0 1vw;
+  margin: 1vh 1vw 0 1vw;
   background-color: #fbfbff;
+  height: 31%;
+}
+.pan p {
+  align-self: center;
+  margin: 10px;
 }
 .pan img {
-  border-radius: 10px;
   box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.1);
-  height: 98%;
   width: 35%;
 }
 .pan-1 img,
@@ -332,10 +375,10 @@ h2 {
   top: 100vh;
 }
 .values {
-  top: 200vh;
+  top: 300vh;
 }
 .associations {
-  top: 300vh;
+  top: 200vh;
 }
 .entreprises {
   top: 400vh;
@@ -388,7 +431,62 @@ h2 {
   font-size: 1.6vw;
   padding: 5px 0 5px 0;
 }
+/* ASSOCIATIONS */
+.asso {
+  z-index: 2;
+  position: absolute;
+  width: 80vw;
+  height: 50vw;
+  left: 10%;
+  top: 10%;
+  border: 2px solid #2d352c;
+  background: #fbfbff;
+  box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.1);
+  min-height: 550px;
+}
+.field {
+  margin-left: 10%;
+  font-size: 1.2vw;
+  padding: 5px 10px 5px 10px;
+}
+
+.form-input {
+  display: inline;
+  margin-left: 15px;
+}
+.form-input input {
+  font-size: 1.2em;
+  border: 1px solid grey;
+  padding: 3px;
+}
+/* .mission-name {
+  background: red;
+}
+
+.adresse {
+  background: blue;
+}
+.date {
+  background: red;
+}
+.nbheures {
+  background: blue;
+}
+.nbpersonnes {
+  background: red;
+}
+.descriptif {
+  background: blue;
+}
+.remarques {
+  background: red;
+}
+. {
+} */
 @media (max-width: 967px) {
+  .replace {
+    margin-top: 30vh;
+  }
   .header-box {
     top: unset;
     bottom: 0;
@@ -427,18 +525,7 @@ h2 {
   .classic-h1 {
     font-size: 40px;
   }
-  .asso {
-    position: absolute;
-    z-index: 4;
-    width: 30vw;
-    height: 30vw;
-    left: 35%;
-    top: 35%;
-    border: 2px solid #2d352c;
-    border-radius: 100%;
-    background: #fbfbff;
-    z-index: 10;
-  }
+
   .catch-sentance {
     left: 15%;
     width: 70%;
@@ -480,6 +567,9 @@ h2 {
   .item-3 {
     margin-left: 4%;
   }
+  .pan p {
+    font-size: 0.6em;
+  }
   .landing-button {
     left: 20%;
     width: 60vw;
@@ -514,9 +604,5 @@ h2 {
   }
   .landing-button {
     padding: 30px;
-  }
-  .replace {
-    margin-left: 10%;
-    margin-top: 10%;
   }
 }

@@ -1,29 +1,31 @@
 export default function Layout(props) {
   return (
     <div>
-      <div className="lname">
-        <h1 className="landing-h1">
-          <b className="N-h1">N</b>
-          <b className="OUS-h1">OUS</b>
-        </h1>
-        <p className="sub-title">
-          <font>ASSO</font>
-          <font>&CIE</font>
-        </p>
-      </div>
+      <a href="#associations">
+        <div className="lname">
+          <h1 className="landing-h1">
+            <b className="N-h1">N</b>
+            <b className="OUS-h1">OUS</b>
+          </h1>
+          <p className="sub-title">
+            <font>ASSO</font>
+            <font>&CIE</font>
+          </p>
+        </div>
+      </a>
       <div className="catch-sentance front">
         <p>
+          « S'investir.
+          <br />
+          Agir pour <b className="N-text">S</b>oi et pour les{' '}
+          <b className="N-text">A</b>utres. »
+        </p>
+        <p className="info">
           <i>
-            « S'investir.
-            <br />
-            Agir pour <b className="N-text">S</b>oi et pour les{' '}
-            <b className="N-text">A</b>utres. »
+            Mise en relations des entreprises et des associations pour favoriser
+            l'engagement solidaire des collaborateurs.
           </i>
         </p>
-        {/* <p className="info">
-          De nombreuses causes valent la peine, impliquez vous socialement dans
-          les associations locales !
-        </p> */}
       </div>
       <div className="front">
         <a href="#inscription">
